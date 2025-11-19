@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cor usada pelo adaptive icon como fundo -->
+    <color name="ic_launcher_background">#FFFFFF</color>
+
+    <!-- (Opcional) sua cor de marca primária para o app todo -->
+    <color name="brand_seed_blue">#1565C0</color>
+</resources>

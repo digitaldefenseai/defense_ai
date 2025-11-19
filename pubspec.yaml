@@ -1,0 +1,79 @@
+name: defense_ai
+description: "Aplicativo de segurança digital multiplataforma Defense.AI"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  google_mobile_ads: ^5.0.0           # AdMob
+  app_tracking_transparency: ^2.0.4    # ATT iOS
+  shared_preferences: ^2.3.2           # Persistir Premium/consentimento
+  crypto: ^3.0.3                       # Hash/segurança (Fase 6.3)
+  url_launcher: ^6.3.0                 # 🔹 Abrir Política de Privacidade
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+# ============ APP ICON (Launcher) ============
+flutter_launcher_icons:
+  android: true
+  ios: true
+  min_sdk_android: 21
+  remove_alpha_ios: true
+
+  # Base/fallback (arquivo “apertado”, pouco padding)
+  image_path: "assets/images/icon_foreground.png"
+  image_path_ios: "assets/images/icon_foreground.png"
+
+  # Adaptive Icon usa o foreground dedicado (tight)
+  adaptive_icon_foreground: "assets/images/icon_foreground.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_monochrome: "assets/images/icon_foreground.png"
+
+  web:
+    generate: true
+    image_path: "assets/images/icon_foreground.png"
+    background_color: "#0A0F1C"
+    theme_color: "#00E0FF"
+
+  windows:
+    generate: false
+    image_path: "assets/images/icon_foreground.png"
+    icon_size: 256
+
+  macos:
+    generate: true
+    image_path: "assets/images/icon_foreground.png"
+
+# ============ NATIVE SPLASH (Dark/Light) ============
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/splash.png
+
+  color_dark: "#0A0F1C"
+  image_dark: assets/images/splash.png
+
+  # Android 12+: use o MESMO asset “apertado” do ícone p/ ficar grande
+  android_12:
+    image: assets/images/icon_foreground.png
+    icon_background_color: "#FFFFFF"
+    image_dark: assets/images/icon_foreground.png
+    icon_background_color_dark: "#FFFFFF"
+
+  web: false
+  fullscreen: true

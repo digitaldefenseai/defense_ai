@@ -1,0 +1,33 @@
+{
+    "name": "Defense.AI",
+    "short_name": "Defense.AI",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0A0F1C",
+    "theme_color": "#00E0FF",
+    "description": "Seu escudo digital contra golpes.",
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

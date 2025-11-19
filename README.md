@@ -1,16 +1,28 @@
-# defense_ai
+# Defense.AI
 
-Aplicativo de segurança digital multiplataforma Defense.AI
+Aplicativo de segurança digital multiplataforma **Defense.AI** (Flutter).
 
-## Getting Started
+## Sobre o projeto
 
-This project is a starting point for a Flutter application.
+Defense.AI é um app de segurança digital focado em proteger usuários contra golpes online, com recursos como:
 
-A few resources to get you started if this is your first Flutter project:
+- Escaneamento inteligente de mensagens e links;
+- Verificação de segurança de redes Wi-Fi;
+- Monitoramento de golpes ativos no Brasil (Pix, consignado, WhatsApp, etc.);
+- Proteção em tempo real (versão Premium);
+- VPN segura (versão Premium);
+- Alertas imediatos para contato de confiança.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Este repositório contém o código-fonte do aplicativo desenvolvido em **Flutter**, compilável para Android (e futuramente iOS/Web/desktop).
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Estrutura básica
+
+- `lib/` – Código Dart/Flutter do app
+- `android/` – Projeto nativo Android
+- `ios/` – Projeto nativo iOS
+- `pubspec.yaml` – Dependências e configurações do projeto
+
+---
+
+© DigitalDefense.AI – Defense.AI
+~~~~
